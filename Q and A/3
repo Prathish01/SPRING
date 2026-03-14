@@ -1,0 +1,70 @@
+11. configuration for object creation.
+
+@Component
+It is class level annotation which is used to create object og the class
+The class which is annotated with @Component annotation is also called as Component class.
+Spring container will create the object of Component class  and keep it in its container
+
+But we need tell to the Spring container where my component class is present.
+
+--------------------------------------------------------------
+12. Dependency injection using @Value annotation
+
+Pros:
+Integrated with Spring’s dependency injection system.
+Automatically pulls config values from external sources (properties/env).
+Good for centralized, static configuration (e.g., port, URLs, credentials).
+
+Cons:
+Not dynamic: Values are fixed when the application starts.
+You can’t easily change the values at runtime.
+Only one instance managed by Spring (singleton by default).
+
+@Value
+It is method/datamember level annotation.
+It is used to inject primitive dependencies.
+
+1.Directly on Datamember
+ex:
+@Value(value="10)
+int age;
+
+2.Setter DI
+ex:
+int age;
+	Person(@Value(value = "10") int age){
+		this.age=age;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+3.Constructor DI
+ex:
+	@Value(value = "10")
+	public void setAge(int age) {
+		this.age = age;
+	}
+--------------------------------------------------
+
+13. @Autowired
+
+It is used with reference type dependency.
+It identifies the bean automatically from container and injects the bean to specified Object.
+It can be used on variable,setter methods or constructor.
+
+-------------------------------------------------------
+
+14. Create a java class
+
+Annotate it with @Configuration
+In order to scan pakage to find component class we need to specify another annotation i.e.,
+@ComponentScan(basePackages = "packageName") below @Configuration
+
+In driver class we need to create the object for AnnotationConfigApplicationContext one of the subclass of  ApplicationContext  and specify the class name of configuration file in its constructor call.
+
+-----------------------------------------------------
+15. @ComponentScan
+
+It is an imp annotation which is used to specify the packages that we want to be scanned for object creation 
