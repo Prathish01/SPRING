@@ -1,0 +1,53 @@
+6. Spring App has 3 imp components:
+1.config class
+2.bean class
+3.Driver
+	To develop spring app ,components are not present in my JDK we need help of 3rd party api
+that is Spring Context API.
+Add Spring Contect dependency in pom.xml.
+
+--------------------------------------------------------------
+7. Prequisites to create  Spring Project:
+
+--Create simple maven project ,give package and project name.
+--Add Spring-Context dependency available in maven repository 
+--Create a classes in src/main/java , we can have any name  
+
+--------------------------------------------------------------
+8. Steps to work with Spring Framework
+
+1.Create a bean class ,declare datamembers as private and generate getters and setters.
+2.Create spring configuration class to configure the dependencies.
+3.Create a test-dependent class i.e driver class to check values are injected or not.
+
+--------------------------------------------------------------
+9. Types of dependencies:
+
+primitive dependency
+Collection dependency
+Reference Type--Has a relation.
+
+--------------------------------------------------------------
+10. We have different types of DI
+
+Setter DI
+Contructor DI
+
+Difference between setter and constructor injection
+
+1.It is a type of dependency  injection  where setter method is used to inject dependencies.
+
+It is a type of dependency  injection  where constructor is used to inject dependencies.
+
+2.property tag is used to inject dependencies.
+
+constructor-arg tag is used to inject dependencies.
+
+3.If any dependency is not injected by the user then that dependency is injected by the spring container implicitly with default values.
+
+User should inject all dependency explicitly.
+
+4.It is not mandatory to maintain the order while injecting dependencies.
+
+It is mandatory to maintain the order while injecting dependencies.
+
