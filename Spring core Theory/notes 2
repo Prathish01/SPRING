@@ -1,0 +1,68 @@
+4. What happens internally?
+Spring:
+Creates Samsung object
+Creates Customer object
+Injects Samsung into Customer
+
+Flow Diagram
+Customer  →  Mobile (interface)
+                 ↑
+        Samsung / Nokia
+
+Spring chooses and injects
+
+Tight vs Loose Coupling Comparison
+Feature		Tight Coupling	Loose Coupling
+Dependency	Direct class	Interface
+Flexibility	Low		High
+Maintenance	Difficult	Easy
+Testing		Hard		Easy
+Reusability	Poor		Good
+Spring DI	Not used	Used
+
+Real-Time Example:
+Tight Coupling
+Car → PetrolEngine
+If engine changes → Car must change 
+
+Loose Coupling
+Car → Engine (interface)
+PetrolEngine / DieselEngine / ElectricEngine
+Change engine easily 
+
+How Spring Achieves Loose Coupling?
+Spring uses:
+1. IOC
+Spring creates objects
+2. Dependency Injection
+Spring injects objects
+3. Interfaces
+Depend on abstraction
+4. @Autowired
+Automatic wiring
+
+Key Interview Definition
+Short Answer:Loose Coupling means reducing dependency between classes by using interfaces and dependency injection.
+One-line Answer:Classes depend on interfaces, not implementations.
+
+Advantages of Loose Coupling
+Easy to change implementation
+Easy testing (mock objects)
+Easy maintenance
+Reusable code
+Flexible design
+Better scalability
+
+------------------------------------------------------------------------------
+
+2. What is Spring Core?
+
+Spring Core is the foundation module of Spring.
+
+It provides:
+IOC (Inversion of Control)
+Dependency Injection (DI)
+Bean management
+Container support
+
+Without Spring Core → other modules cannot work.
