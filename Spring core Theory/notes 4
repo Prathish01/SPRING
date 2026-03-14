@@ -1,0 +1,115 @@
+10. @Autowired
+Definition :Automatically injects dependency by type.
+
+Example:
+@Autowired
+Mobile mob;
+
+Spring searches:Bean of type Mobile
+
+---------------------------------------------
+11. @Value
+
+Definition:Injects primitive values or constants.
+
+Example:
+
+@Value("101")
+int id;
+---------------------------------------------
+13. @Qualifier
+
+Definition:Specifies exact bean name.
+
+Example:
+
+@Autowired
+@Qualifier("second")
+ArrayList list;
+
+Meaning:Inject bean named "second"
+-------------------------------------------
+14. @Primary
+
+Definition:Marks default bean among multiple beans.
+
+Example:
+
+@Primary
+@Component
+public class Samsung implements Mobile
+
+Meaning:If multiple Mobile beans exist → Samsung is default
+
+Difference: @Primary vs @Qualifier
+Feature		@Primary	@Qualifier
+Selection	Default		Specific
+Usage		Class level	Field level
+----------------------------------------------
+
+15. Interface-Based Injection
+
+Why use interface?
+Loose coupling
+Easy replacement
+Better design
+
+Example:
+
+Mobile mob;
+Implementations:Nokia & Samsung
+
+Spring injects based on:
+
+@Primary OR @Qualifier
+------------------------------------------------
+17. Advantages of Spring Core
+
+Loose coupling
+Less boilerplate code
+Easy testing
+Modular design
+Better maintainability
+Easy configuration
+---------------------------------------------------
+
+18. Real-Time Flow Diagram (Concept)
+
+Without Spring
+Customer → new Mobile()
+
+With Spring
+Spring Container
+      ↓
+Creates Mobile
+      ↓
+Injects into Customer
+------------------------------------------------
+
+19. Quick Revision Table
+
+Concept		Purpose
+IOC		Object creation by Spring
+Bean		Managed object
+@Component	Auto bean
+@Bean		Manual bean
+@Autowired	Inject dependency
+@Value		Inject constants
+@Qualifier	Choose specific bean
+@Primary	Default bean
+ApplicationContext	Container
+--------------------------------------------
+
+20. Interview Questions 
+
+
+What is IOC?
+What is DI?
+Difference between @Component and @Bean?
+What is @Autowired?
+Types of DI?
+Why constructor injection is best?
+What is @Qualifier?
+What is @Primary?
+What is Spring container?
+What is a bean?
