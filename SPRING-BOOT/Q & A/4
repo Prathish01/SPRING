@@ -1,0 +1,38 @@
+14. JpaRepository:
+
+-It is an interface that contains the APIs for performing operations like insertion,deletion,updation,retrieving the data etc.
+Syntax:
+JpaRepository<T,Id>
+T-Entity class name whose objects will be managed by JpaRepository.
+Id-The corresponding wrapper class of the value which is annotated with @Id in the entity class.
+
+----------------------------------------------------------------------------------------
+
+15. Methods of JpaRepository:
+
+-save(object):It is used to insert an object into the database.
+-findAll():It is used to retrieve all the objects from the database.
+	It returns the objects stored in List(of java.util package).
+-deleteById(int):It allows us to delete an object from the database based on id value.
+-delete(object):It is used to delete specific object.
+-findById(int):It is used to retrieve an object from the database based on the id value.
+	Object will be returned in the form of Optional.
+Optional is a class introduced in Java8  version.
+It is used to store not null values.
+----------------------------------------------------------------------------------------
+
+16. Optional class has methods like:
+
+.isPresent():it will return true is the object is present else returns false.
+.isEmpty():it will return true if the object is not present else returns false.
+.get():it returns the value present in the optional object.
+
+---------------------------------------------------------------------------------------
+
+17. Postman
+
+-It is an API platform for the developers to design ,build and test their APIs.
+-It is one of the most popular software testing tool used forn API testing.
+-It is a simple graphic user interface for sending http request and viewing the http response.
+-This tool has an ability to make various http request like get,post,put,delete etc and convert the API into code for languages like java,javascript,python etc.
+-----------------------------------------------------------------------------------------
