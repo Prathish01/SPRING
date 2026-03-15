@@ -1,0 +1,100 @@
+12. SpringBoot project with database:
+
+1.Create springboot project and add following dependencies
+-Spring web
+-Spring data Jpa----to interact with database
+-MySql Driver
+2.In src/main/resources ,we need add all database configuration information.
+3.Create an entity class and generate getters and setters
+4.To connect the entity class to database repository ,i need to create an interface which extends JpaRepository<EntityClass,TypeOfPrimaryKey>.
+JpaRepository gives us inbuilt methods to perform transaction in database.
+5.Create controller class and generate endpoints to perform CRUD operations.
+
+
+@Entity
+@Getter
+@Setter
+public class Employee {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
+	private String name;
+	private double salary;
+	private String location;
+}
+
+import org.springframework.data.jpa.repository.JpaRepository;
+public interface EmployeeRepository extends JpaRepository<Employee, Integer>{
+
+}
+
+@RestController
+public class EmployeeController {
+	@Autowired
+	EmployeeRepository repository;
+
+	@PostMapping("/save")
+	public String saveEmployee(@RequestBody Employee employee){
+		repository.save(employee);
+		return structure;
+	}
+
+}
+------------------------------------------------------------------------------
+
+13. Annotations of springboot framework
+
+@SpringBootApplication:
+-It is used to mark a configuration class that triggers autoconfiguration and automatic component scanning.
+-It is a combination of of @Configuration,@ComponentScan and
+@EnableAutoConfiguration.
+-This annotation will make the springboot to automatically configure the application based on the dependencies as well as the properties specified in the application.properties file.
+-It should be used on the class with main method.
+
+@Entity:
+-It will create table for the class
+
+@Id:
+-It will specify the primary key.
+
+@GeneratedValue:
+-Generates unique value for primary key automatically
+
+@Autowired:
+It is reponsible for automatic dependency injection.
+
+@Controller:
+-It indicates the particular class is a controller class.
+-It can be applied to classes only and it is used at presentation layer.
+-The controller annotation is used with combination of @RequestMapping annotation.
+-If we annotate a class with @Controller then we have to use @ResponseBody annotation.
+-@ResponseBody annotation is used to convert java object into the reponse inthe form which the client is expecting like JSON.
+
+@RestController:
+-It is a combination of @Controller and @ResponseBody
+-It is used for developing Restful web services.
+-It can be applied to classes only and is used in presentation layer.
+
+@PostMapping:
+-It maps the http post request on the specific handler method.
+-It is used to create a web service end point that creates.
+
+@GetMapping:
+-It maps the http get request on the specific handler method.
+-It is used to create a web service end point that fetches.
+
+@DeleteMapping:
+-It maps the http delete request on the specific handler method.
+-It is used to create a web service end point that deletes a resource.
+
+@PutMapping:
+-It maps the http put request on the specific handler method.
+-It is used to create a web service end point that updates.
+
+@RequestBody:
+-It is used to bind the incoming http request body(onject) to a method parameter.
+-It is used to automatically convert the http request body sent by the client in JSON format into a java object.
+
+@RequestParam:
+-It is used to extract the query parameters from the url.
+------------------------------------------------------------------------------------------------------------------
