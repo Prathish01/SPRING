@@ -1,0 +1,91 @@
+8. Trigger the end point:
+-When we create springboot application by default there is Driver class annotated with @SpringBootApplication where the springboot application starts from.
+-Execute the driver class and go to browser and the url as
+http://localhost:/8080/<url> 
+this will trigger particular method and you'll get the output.
+
+----------------------------------------------------------------------------
+
+9. Pass Value using Query String
+
+QueryString is piece of info which is going to travel along with url.
+
+EX:
+url--http://localhost:8080/message?id=101&name=allen
+
+@GetMapping("/message")
+public String message(@RequestParam int id,@RequestParam String name) 
+{
+		return "my id is:"+id+" and name is:"+name;
+}
+
+----------------------------------------------------------------------------------
+
+10. Pass value using path variable
+
+EX:
+url-----http://localhost:8080/value/101/allen
+
+@GetMapping("/value/{id}/{name}")
+public String value(@PathVariable int id,@PathVariable String name) 
+{
+		return "my id is:"+id+" and name is:"+name;
+} 
+--------------------------------------------------------------------------------
+
+11. JSON-JavaScript Object Notation
+
+JSON objects are used while sharing the data because it is light weighted simple object.
+It is easy to parse to respective language object.
+They are well structured objects. 
+
+How to create json object?
+Syntax:{
+	//stored in key value pair
+}
+
+Ex:
+class Student{
+int roll;
+String name;
+double height;
+}
+
+json object:
+{
+"roll":101,
+"name":"allen",
+"height":5.5
+}
+----------------------------------------------------------------------
+
+11. Pass object using @RequestBody
+
+class Student{
+int roll;
+String name;
+double height;
+//getters & setters
+}
+
+@RestController
+public class TestController {
+@PostMapping("/save")
+	public String saveStudent(@RequestBody Student student) {
+		return "Student name is:"+student.getName();
+	}
+}
+
+Run the driver class
+Go to postman
+select method type to post and give url http://localhost:8080/save
+go to body--raw ,in text select json
+Type as:
+{
+"roll":101,
+"name":"allen",
+"height":5.5
+}
+
+Send the request
+------------------------------------------------------------------------------
