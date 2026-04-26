@@ -10,3 +10,6 @@ public class ResponseStructure<T>
 	private int StatusCode;
 
 }
+
+
+
