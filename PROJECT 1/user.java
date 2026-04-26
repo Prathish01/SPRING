@@ -8,7 +8,6 @@ import jakarta.persistence.Id;
 public class User 
 {
 
-	
 	@Id
 private int UserId;
 private String UserName;
