@@ -63,7 +63,6 @@ public class Userdao {
 		{
 			 userrepository.deleteById(userId);
 			 return "User Deleted Successfully";
-			
 		}
 		else
 		{
