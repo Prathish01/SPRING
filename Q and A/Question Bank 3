@@ -68,3 +68,4 @@ In driver class we need to create the object for AnnotationConfigApplicationCont
 15. @ComponentScan
 
 It is an imp annotation which is used to specify the packages that we want to be scanned for object creation 
+
