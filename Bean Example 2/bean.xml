@@ -14,6 +14,7 @@
         <property name="gender" value="Male"/>
     </bean>
 
+       
     <bean id="stu2" class="com.spring.dao.student">
         <property name="studentId" value="102"/>
         <property name="studentName" value="prathish"/>
