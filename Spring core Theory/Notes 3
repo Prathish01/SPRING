@@ -6,6 +6,7 @@ Without IOC (Traditional Java)
 Mobile m = new Mobile();
 Customer c = new Customer(m);
 
+
 Programmer creates objects manually → Tight coupling
 With IOC (Spring)
 @Autowired
