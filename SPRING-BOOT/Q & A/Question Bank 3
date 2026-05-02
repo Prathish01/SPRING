@@ -11,6 +11,7 @@ JpaRepository gives us inbuilt methods to perform transaction in database.
 5.Create controller class and generate endpoints to perform CRUD operations.
 
 
+
 @Entity
 @Getter
 @Setter
