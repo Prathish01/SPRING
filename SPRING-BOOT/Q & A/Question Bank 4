@@ -19,6 +19,7 @@ Id-The corresponding wrapper class of the value which is annotated with @Id in t
 	Object will be returned in the form of Optional.
 Optional is a class introduced in Java8  version.
 It is used to store not null values.
+
 ----------------------------------------------------------------------------------------
 
 16. Optional class has methods like:
