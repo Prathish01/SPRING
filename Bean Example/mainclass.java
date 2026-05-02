@@ -6,7 +6,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import com.hibernate.dao.employee;
 
 
-
 public class App {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("META-INF/bean.xml");
@@ -20,6 +19,7 @@ public class App {
         employee bean3 = context.getBean("emp3",employee.class);
         System.out.println(bean3);
         
+
         
         employee bean4 = context.getBean("emp4",employee.class);
         System.out.println(bean4);
