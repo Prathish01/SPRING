@@ -5,6 +5,7 @@
        http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+       
     <bean id="emp1" class="com.hibernate.dao.employee" primary="true">
         <property name="empId" value="201"/>
         <property name="empName" value="Murali"/>
