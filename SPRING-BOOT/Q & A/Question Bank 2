@@ -57,6 +57,7 @@ json object:
 "name":"allen",
 "height":5.5
 }
+
 ----------------------------------------------------------------------
 
 11. Pass object using @RequestBody
