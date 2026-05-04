@@ -3,6 +3,7 @@ package com.hibernate.dao;
 import lombok.Data;
 
 
+
 @Data
 public class employee 
 {
@@ -17,3 +18,5 @@ public class employee
 	    	System.out.println("object created succesfully");
 	    }
 }
+
+
