@@ -13,3 +13,7 @@ private String gender;
 @Autowired
 private school scho;
 }
+
+
+
+
