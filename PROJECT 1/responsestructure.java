@@ -9,7 +9,11 @@ public class ResponseStructure<T>
 	private String message;
 	private int StatusCode;
 
+	
 }
+
+
+
 
 
 
