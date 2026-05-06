@@ -7,6 +7,7 @@ import jakarta.persistence.Id;
 @Entity
 public class User 
 {
+	
 
 	@Id
 private int UserId;
@@ -46,4 +47,6 @@ public void setContact(long contact) {
 }
 
 
+
+	
 }
