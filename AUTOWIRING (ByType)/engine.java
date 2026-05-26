@@ -9,14 +9,17 @@ import lombok.ToString;
 
 
 
+
 @Getter
 @Setter
 @NoArgsConstructor
 @ToString
 public class engine1 
 {
+	
 	private int engineid;
     private String capacity;
+	
 }
 
 
