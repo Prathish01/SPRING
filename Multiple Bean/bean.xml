@@ -3,6 +3,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+	
 	<!-- bean definitions here -->
 	<bean id = "car1" class="com.hibernate.bean.car " primary="true">
 	<property name="carid" value="101"></property>
@@ -10,9 +11,12 @@
 	<property name="model" value="punch"></property>
 	<property name="colour" value="white"></property>
 	<property name="price" value="8lacks"></property>
+
+		
 	
 	
 	</bean>
+
 	
 	<bean id="car2" class="com.hibernate.bean.car">
     <property name="carid" value="102"/>
@@ -20,6 +24,8 @@
     <property name="model" value="i20"/>
     <property name="colour" value="black"/>
     <property name="price" value="10lacks"/>
+
+		
 </bean>
 
 </beans>
