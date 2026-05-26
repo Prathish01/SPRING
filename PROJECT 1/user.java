@@ -7,7 +7,6 @@ import jakarta.persistence.Id;
 @Entity
 public class User 
 {
-	
 
 	@Id
 private int UserId;
@@ -15,7 +14,9 @@ private String UserName;
 private String email;
 private String Password;
 private long Contact;
-public int getUserId() {
+	
+public int getUserId()
+	{
 	return UserId;
 }
 public void setUserId(int userId) {
