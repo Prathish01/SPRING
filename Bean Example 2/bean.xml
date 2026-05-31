@@ -5,6 +5,8 @@
        http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+
+       
     <bean id="stu1" class="com.spring.dao.student" primary="true">
         <property name="studentId" value="101"/>
         <property name="studentName" value="Murali"/>
