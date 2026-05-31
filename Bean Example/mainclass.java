@@ -9,7 +9,10 @@ import com.hibernate.dao.employee;
 
 
 public class App {
+
+    
     public static void main(String[] args) {
+        
         ApplicationContext context = new ClassPathXmlApplicationContext("META-INF/bean.xml");
         
         employee bean = context.getBean("emp1",employee.class);
@@ -27,6 +30,8 @@ public class App {
         System.out.println(bean4);
         
         employee bean5 = context.getBean("emp5",employee.class);
+        
         System.out.println(bean5);
+        
     }
 }
