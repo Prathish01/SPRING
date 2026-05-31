@@ -23,6 +23,7 @@ public class App {
       
       student bean2 = context.getBean("stu3",student.class);
       System.out.println(bean2);
+        
       
       
     }
