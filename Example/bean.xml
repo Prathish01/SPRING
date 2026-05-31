@@ -4,6 +4,7 @@
        xsi:schemaLocation="
        http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
        
        
        
@@ -11,6 +12,7 @@
     <property name="name" value="tvt school"/>
     <property name="location" value="chennai"/>
     </bean>
+       
        
        
        <bean id="school2" class="com.jspiders.dao.school">
