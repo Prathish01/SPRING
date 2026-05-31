@@ -12,10 +12,16 @@ public class employee
 	    private String designation;
 	    private String department;
 	    private String salary;
-	    
+
+	
 	    public employee()
+
+
+	
 	    {
+			
 	    	System.out.println("object created succesfully");
+			
 	    }
 }
 
