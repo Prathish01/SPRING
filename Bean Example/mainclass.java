@@ -6,8 +6,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import com.hibernate.dao.employee;
 
 
-
-
 public class App {
 
     
