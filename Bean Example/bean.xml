@@ -5,9 +5,6 @@
        http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-
-
-       
        
     <bean id="emp1" class="com.hibernate.dao.employee" primary="true">
         <property name="empId" value="201"/>
@@ -17,6 +14,7 @@
         <property name="salary" value="3.5 LPA"/>
     </bean>
 
+       
     <bean id="emp2" class="com.hibernate.dao.employee">
         <property name="empId" value="202"/>
         <property name="empName" value="Azhai"/>
@@ -24,7 +22,8 @@
         <property name="department" value="Development"/>
         <property name="salary" value="4 LPA"/>
     </bean>
-    
+
+       
      <bean id="emp3" class="com.hibernate.dao.employee">
         <property name="empId" value="203"/>
         <property name="empName" value="surya"/>
@@ -32,6 +31,7 @@
         <property name="department" value="Designing"/>
         <property name="salary" value="12 LPA"/>
     </bean>
+       
     
      <bean id="emp4" class="com.hibernate.dao.employee">
         <property name="empId" value="204"/>
