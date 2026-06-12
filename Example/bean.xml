@@ -5,14 +5,10 @@
        http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-       
-       
-       
     <bean id="school1" class="com.jspiders.dao.school">
     <property name="name" value="tvt school"/>
     <property name="location" value="chennai"/>
     </bean>
-       
        
        
        <bean id="school2" class="com.jspiders.dao.school">
@@ -20,7 +16,6 @@
        <property name="location" value="tamilnadu"/>
        
        </bean>
-       
        
        <bean id="student1" class="com.jspiders.dao.student" autowire="byType">
        <property name="Studentid" value="01"/>
