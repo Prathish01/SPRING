@@ -1,11 +1,6 @@
 package com.hibernate.dao;
-
 import lombok.Data;
-
-
-
-@Data
-    
+@Data   
 public class Engine
     {
     private int engineid;
