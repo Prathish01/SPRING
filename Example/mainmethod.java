@@ -12,23 +12,11 @@ import com.jspiders.dao.student;
 public class App {
     public static void main(String[] args) {
 
-        
-
     	ApplicationContext context = new ClassPathXmlApplicationContext("META-INF/bean.xml");
     	student stu = context.getBean("student1",student.class);
     	student stu1 = context.getBean("student1",student.class);
 
-        
     	System.out.println(stu);
     	System.out.println(stu1);
     }
 }
-
-
-
-
-
-
-
-
-
