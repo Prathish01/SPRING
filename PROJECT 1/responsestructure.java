@@ -4,7 +4,6 @@ import lombok.Data;
 @Data
 
 
-	
 public class ResponseStructure<T>
 	
 {
@@ -15,9 +14,6 @@ public class ResponseStructure<T>
 
 	
 }
-
-
-
 
 
 
