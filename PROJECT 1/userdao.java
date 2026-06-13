@@ -56,6 +56,8 @@ public class Userdao {
 	
 	}
 
+
+	
 	public String deleteuser(int userId) {
 		
 		Optional<User> opt = userrepository.findById(userId);
