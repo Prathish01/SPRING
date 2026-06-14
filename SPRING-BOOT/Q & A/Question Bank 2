@@ -10,6 +10,7 @@ this will trigger particular method and you'll get the output.
 
 QueryString is piece of info which is going to travel along with url.
 
+
 EX:
 url--http://localhost:8080/message?id=101&name=allen
 
