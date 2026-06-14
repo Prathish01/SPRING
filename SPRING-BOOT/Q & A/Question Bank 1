@@ -9,7 +9,9 @@
 -WebService:a service which is accessed over an internet(only data)
 -All web service are web application but all web application are not web services.
 
+
 --------------------------------------------------------------------------------
+
 
 2, To bulid web service we need to follow certain rules or architecture
 we use REST architecture.
