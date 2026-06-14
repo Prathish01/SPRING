@@ -4,10 +4,7 @@
        xsi:schemaLocation="
        http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
-
-
-       
-    <bean id="stu1" class="com.spring.dao.student" primary="true">
+    <bean id="stu1" class="com.spring.dao.student"imary="true">
         <property name="studentId" value="101"/>
         <property name="studentName" value="Murali"/>
         <property name="course" value="Full Stack Java"/>
@@ -15,7 +12,6 @@
         <property name="age" value="22"/>
         <property name="gender" value="Male"/>
     </bean>
-
        
     <bean id="stu2" class="com.spring.dao.student">
         <property name="studentId" value="102"/>
