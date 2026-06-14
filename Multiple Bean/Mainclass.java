@@ -7,7 +7,9 @@ import com.hibernate.bean.car;
 
 public class App {
     
+    
     public static void main(String[] args) {
+
         
 
         ApplicationContext context =
@@ -16,8 +18,10 @@ public class App {
 
         
         car bean = context.getBean("car1", car.class);
+
         
         car bean1 = context.getBean("car2",car.class);
+
         
         System.out.println(bean);
         
