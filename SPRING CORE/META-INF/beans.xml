@@ -4,6 +4,7 @@
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+
 	
     <!-- bean definitions here -->
 <bean id="carl" class="com.hibernate.spring_beans" primary="true">
@@ -14,6 +15,8 @@
    <property name="colour" value="White"/>
 	<property name="price" value="7Lacks"/>
 	</bean>
+
+	
 <bean id="carl" class="com.hibernate.spring_beans" primary="true">
 	 <property name="carId" value="102"/>
    <property name="brand" value="TATA"/>
@@ -22,6 +25,8 @@
 	<property name="price" value="20Lacks"/>
 	
 </bean>	
+
+	
 <bean id="student1" class="com.hibernate.spring_beans" >
 	<constructor-arg name="studentId" value="1"/>
 	<constructor-arg name="name" value="Ramesh"/>
