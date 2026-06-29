@@ -6,8 +6,6 @@ Example:
 Mobile mob;
 
 Spring searches:Bean of type Mobile
-
-
 ---------------------------------------------
 11. @Value
 
