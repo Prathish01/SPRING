@@ -5,8 +5,10 @@ public class Car {
 
 		private int carId;
 		private String brand;
+	
 		private String model;
 		private String colour;
+	
 		private String price;
 		
 		public int getCarId() {
