@@ -10,9 +10,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 public class engine1 
-{
-	
-	
+{	
 	private int engineid;
     private String capacity;
 	
